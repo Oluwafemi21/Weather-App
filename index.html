@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>My Weather App</h1>
+
+      <form id="form">
+        <label for="city">Enter a location to get Weather information</label>
+        <input type="text" name="city" />
+      </form>
+      <section class="weather-card hidden">
+        <img
+          class="weather-card-img time"
+          src="https://via.placeholder.com/400x300"
+          alt="weather-image"
+        />
+        <div class="icon">
+            <!-- Icon -->
+            <img src="" alt="">
+        </div>
+        <div class="weather-details">
+            <h5>City Name</h5>
+            <h4>Weather Condition</h4>
+            <h2><span>Temp</span> &deg;C</h2>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

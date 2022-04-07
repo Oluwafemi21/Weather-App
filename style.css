@@ -1,0 +1,107 @@
+:root{
+    --green:#3bc14a;
+    --dark:#252422;
+    --light:#403d39;
+    --bg:#f8f7f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: var(--bg);
+ color: var(--light);
+ letter-spacing: 1px;
+}
+
+body, input {
+ font-size: 18px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+.container{
+    max-width: 400px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label,.weather-details h4{
+    font-weight: 400;
+}
+
+input{
+    width: 100%;
+    margin: 15px 0;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid var(--light);
+    transition: 0.25s ease;
+}
+
+input:hover,input:focus{
+    border-color: var(--green);
+}
+
+.weather-card{
+    background-color: var(--dark);
+    color: var(--bg);
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+    position:relative;
+    overflow: hidden;
+}
+
+.weather-card-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-weight: 600;
+    margin-inline:auto;
+    margin-bottom: -30px;
+    position: relative;
+    bottom: 50px;
+    
+}
+
+.weather-details{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 25px;
+}
+
+.weather-details h2{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.hidden{
+    display: none;
+}
